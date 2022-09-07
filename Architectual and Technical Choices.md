@@ -3,6 +3,7 @@
 This file contains the Architectual and Technical choices for the Chessworks project.
 
 It includes the following topics:
--Architectural
--Technical
+
+- Architectural
+- Technical
 
