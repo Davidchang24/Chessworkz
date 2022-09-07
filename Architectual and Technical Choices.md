@@ -23,3 +23,6 @@ In the previous semesters I've used C# as the main language. This semester we ha
 
 ### Microservices
 To creating something that is called a distributed system, we need to build multiple small systems that have their own responsibility (that can run sepreatly from eachother). The microservice architecture holds that philosophy "Do one thing and do it well". In other words builds small, independent and self-contained services that are ready to go.
+
+### Spring boot 
+Spring boot is a framework in java that provides developers a auto configurable production-grade spring application that you can "just run".  
