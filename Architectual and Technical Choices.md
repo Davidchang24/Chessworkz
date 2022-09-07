@@ -2,6 +2,8 @@
 
 This file contains the Architectual and Technical choices for the Chessworks project.
 
- Markup :   * Architecture
-              * etc
-              * etc
+ Markup : * Bullet list
+              * Nested bullet
+                  * Sub-nested bullet etc
+          * Bullet list item 2
+
