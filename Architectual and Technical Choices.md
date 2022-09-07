@@ -5,5 +5,9 @@ This file contains the Architectual and Technical choices for the Chessworks pro
 It includes the following topics:
 
 - Architectural
+  - Front-end framework
+  - Back-end 
+  - Sprint boot
+  - Microservices
 - Technical
 
