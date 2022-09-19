@@ -44,6 +44,6 @@ jobs:
       with:
         image: davidchang24/chessworkz
         tags: v1, latest
-        registery: docker.io
+        registry: docker.io
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}    
