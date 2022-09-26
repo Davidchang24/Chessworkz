@@ -33,8 +33,8 @@ jobs:
     - name: Test with Maven
       run: mvn -B test
 
-    - name: Build and push Docker image
-    - uses: mr-smithers-excellent/docker-build-push@v5
+    - name: Build and Push Docker Image
+      uses: mr-smithers-excellent/docker-build-push@v5
       with:
         image: davidchang24/chessworkz
         registry: docker.io
