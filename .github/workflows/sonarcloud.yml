@@ -3,15 +3,10 @@ on:
   push:
     branches:
       - main
-      - dev
   pull_request:
     types: [opened, synchronize, reopened]
 jobs:
   build:
-    env:
-      DB_DATABASE: course
-      DB_USER: root
-      DB_PASSWORD: root
     
     runs-on: ubuntu-latest  
     steps:
