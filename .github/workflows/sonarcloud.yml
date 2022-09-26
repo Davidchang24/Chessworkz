@@ -7,11 +7,11 @@ on:
     types: [opened, synchronize, reopened]
 jobs:
   build:
-  env:
+    env:
       DB_DATABASE: course
       DB_USER: root
       DB_PASSWORD: root
-    name: Build
+    
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
