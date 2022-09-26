@@ -69,6 +69,7 @@ jobs:
       uses: actions/setup-java@v3
       with:
         java-version: '18'
+        distribution: 'temurin'
     - name: Set up MySQL
       run: |
         sudo /etc/init.d/mysql start
