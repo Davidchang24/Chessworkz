@@ -57,7 +57,7 @@ jobs:
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/chessworkz:latest
 
-  name: SonarCloud
+  Sonarcloud-scan:
     runs-on: ubuntu-latest
     needs: build
     steps:
