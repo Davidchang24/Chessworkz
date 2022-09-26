@@ -42,7 +42,7 @@ jobs:
     - uses: mr-smithers-excellent/docker-build-push@v5
       name: Build & push Docker image
       with:
-        image: davidchang24/chessworkz
+        image: davidchang24/chessworkz:v1
         tags: v1, latest
         registry: docker.io
         username: ${{ secrets.DOCKER_USERNAME }}
