@@ -2,7 +2,7 @@ name: Java pipline with Maven
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "main", "dev" ]
   pull_request:
     branches: [ "main" ]
 
