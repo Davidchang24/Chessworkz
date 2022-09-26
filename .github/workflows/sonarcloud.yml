@@ -1,17 +1,11 @@
 name: Code quality scan
 on:
   push:
-    branches:
-      - main
-      - dev
+    branches: [ "main" ]
   pull_request:
     types: [opened, synchronize, reopened]
 jobs:
   build:
-    env:
-      DB_DATABASE: course
-      DB_USER: root
-      DB_PASSWORD: root
     
     runs-on: ubuntu-latest  
     steps:
