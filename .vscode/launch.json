@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-ChessWorkzApplication<ChessWorkz>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.java.chessworkz.ChessWorkzApplication",
+            "projectName": "ChessWorkz",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

@@ -1,10 +1,11 @@
 FROM openjdk:18
 WORKDIR /app
 
-COPY .mvn/ .mvn
-COPY mvnw pom.xml ./
-RUN ./mvnw dependency:go-offline
+COPY mvnw .
+COPY .mvn .mvn
+COPY pom.xml .
+COPY src src
 
-COPY src ./src
-
-CMD ["./mvnw", "spring-boot:run"]
+RUN ./mvnw package
+COPY target/*.jar app.jar
+ENTRYPOINT [ "java", "-jar", "app.jar" ]
