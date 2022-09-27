@@ -18,10 +18,6 @@ public class CourseService {
         return courseRepository.findAll();
     }
 
-    public Course addCourse(Course course) {
-        return courseRepository.save(course);
-    }
-
     public Course postCourse(Course course) {
         return courseRepository.save(course);
     }
@@ -31,7 +27,7 @@ public class CourseService {
     }
 
     public Course getCourseById(long Id) {
-        return courseRepository.getById(Id);
+        return courseRepository.getReferenceById(Id);
     }
 
     public void deleteCourseById(long Id) {
