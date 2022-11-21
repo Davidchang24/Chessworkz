@@ -15,7 +15,9 @@ Chessworkz is a web application that focuses on learning about chess in a intera
 1. Java
 2. Docker desktop
 3. Maven
-###Getting started with this project
+
+
+### Getting started with this project
 
 Clone the project to your device
 
