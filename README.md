@@ -11,6 +11,9 @@
 # Chessworkz
 Chessworkz is a web application that focuses on learning about chess in a interactive way. It is inspired by sites such as Lichess and Chessable.
 
+![php1HL4fp](https://user-images.githubusercontent.com/57895305/203045250-93c934e4-a43a-4a12-a9aa-67e5f9b01806.gif)
+
+
 ### Prerequisites
 1. Java
 2. Docker desktop
