@@ -8,7 +8,38 @@
 
 [![Java pipline with Maven](https://github.com/Davidchang24/Chessworkz/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/Davidchang24/Chessworkz/actions/workflows/main.yml)
 
-# Chessworks
-Chessworks is an web application that focusses on learning about chess in a interactive way. It is inspired by sites such as Lichess and Chessable.
+# Chessworkz
+Chessworkz is a web application that focuses on learning about chess in a interactive way. It is inspired by sites such as Lichess and Chessable.
 
-For more information, please head to the Wiki page, or click on this link: [Wiki-page](https://github.com/Davidchang24/Chessworkz/wiki)
+###Prerequisites
+1. Java
+2. Docker desktop
+3. Maven
+###Getting started with this project
+
+Clone the project to your device
+
+`git clone https://github.com/Davidchang24/Chessworkz.git`
+
+Change directory to the project
+
+`cd Chessworkz`
+
+Run the docker command
+
+`docker run -p PORT:PORT docker-chessworkz:1 `
+
+
+##Documentation
+
+**Architectural and Technical Choices:**
+
+https://github.com/Davidchang24/Chessworkz/wiki/Architectual-and-Technical-Choices
+
+**Design:**
+
+https://github.com/Davidchang24/Chessworkz/wiki/Design
+
+**Wireframes:**
+
+https://github.com/Davidchang24/Chessworkz/wiki/Wireframes
