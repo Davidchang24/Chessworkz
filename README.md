@@ -11,7 +11,7 @@
 # Chessworkz
 Chessworkz is a web application that focuses on learning about chess in a interactive way. It is inspired by sites such as Lichess and Chessable.
 
-###Prerequisites
+### Prerequisites
 1. Java
 2. Docker desktop
 3. Maven
@@ -30,7 +30,7 @@ Run the docker command
 `docker run -p PORT:PORT docker-chessworkz:1 `
 
 
-##Documentation
+## Documentation
 
 **Architectural and Technical Choices:**
 
