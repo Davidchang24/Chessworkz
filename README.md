@@ -15,7 +15,7 @@ Chessworkz is a web application that focuses on learning about chess in a intera
 
 
 ### Prerequisites
-1. Java
+1. Java 17
 2. Docker desktop
 3. Maven
 
