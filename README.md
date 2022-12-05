@@ -6,7 +6,7 @@
 
 [![Deploy to heroku.](https://github.com/Davidchang24/Chessworkz/actions/workflows/heroku.yml/badge.svg?branch=main)](https://github.com/Davidchang24/Chessworkz/actions/workflows/heroku.yml)
 
-[![Java pipline with Maven](https://github.com/Davidchang24/Chessworkz/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/Davidchang24/Chessworkz/actions/workflows/main.yml)
+[![Java pipline with Maven](https://github.com/Davidchang24/Chessworkz/actions/workflows/java.yml/badge.svg)](https://github.com/Davidchang24/Chessworkz/actions/workflows/java.yml)
 
 # Chessworkz
 Chessworkz is a web application that focuses on learning about chess in a interactive way. It is inspired by sites such as Lichess and Chessable.
