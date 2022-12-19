@@ -21,7 +21,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 @SpringBootTest
 @AutoConfigureMockMvc
-public class courseControllerTest {
+public class courseControllerTests {
 
     @Autowired
     private MockMvc mockMvc;
@@ -33,8 +33,7 @@ public class courseControllerTest {
     private ObjectMapper objectMapper;
 
     @Test
-    void shouldGetAllCourses() throws Exception
-    {
+    void shouldGetAllCourses() throws Exception {
         Course course = new Course();
         course.setId(1l);
         course.setCourseName("Opening");
@@ -43,7 +42,7 @@ public class courseControllerTest {
         when(courseService.getAllCourses()).thenReturn(Arrays.asList(course));
 
         mockMvc.perform(MockMvcRequestBuilders.get("/course/all")
-                .contentType(MediaType.APPLICATION_JSON))
+                        .contentType(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$[0].id").value(1l))
                 .andExpect(jsonPath("$[0].courseName").value("Opening"))
@@ -51,8 +50,7 @@ public class courseControllerTest {
     }
 
     @Test
-    void shouldPostCourse() throws Exception
-    {
+    void shouldPostCourse() throws Exception {
         Course postCourse = new Course();
         postCourse.setCourseName("Opening");
         postCourse.setCourseDescription("This is a chess course about openings");
@@ -62,17 +60,16 @@ public class courseControllerTest {
         when(courseService.postCourse(any(Course.class))).thenReturn(postCourse);
 
         mockMvc.perform(MockMvcRequestBuilders.post("/course/create")
-                    .contentType(MediaType.APPLICATION_JSON)
-                    .content(courseAsString)
-                    .accept(MediaType.APPLICATION_JSON))
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content(courseAsString)
+                        .accept(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.courseName").value("Opening"))
                 .andExpect(jsonPath("$.courseDescription").value("This is a chess course about openings"));
     }
 
     @Test
-    void shouldDeleteCourseById() throws Exception
-    {
+    void shouldDeleteCourseById() throws Exception {
         mockMvc.perform(MockMvcRequestBuilders.delete("/course/delete/1")
                         .contentType(MediaType.APPLICATION_JSON)
                         .accept(MediaType.APPLICATION_JSON))
@@ -80,8 +77,7 @@ public class courseControllerTest {
     }
 
     @Test
-    void shouldUpdateCourseById() throws Exception
-    {
+    void shouldUpdateCourseById() throws Exception {
         Course postCourse = new Course();
         postCourse.setId(1l);
         postCourse.setCourseName("Opening");
@@ -91,9 +87,9 @@ public class courseControllerTest {
         when(courseService.updateCourse(postCourse)).thenReturn(postCourse);
 
         mockMvc.perform(MockMvcRequestBuilders.put("/course/update/1")
-                .contentType(MediaType.APPLICATION_JSON)
-                .content(courseAsString)
-                .accept(MediaType.APPLICATION_JSON))
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content(courseAsString)
+                        .accept(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.id").value(1l))
                 .andExpect(jsonPath("$.courseName").value("Opening"))

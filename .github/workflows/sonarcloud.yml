@@ -3,11 +3,11 @@ on:
   push:
     branches: [ "main" ]
   pull_request:
-    types: [opened, synchronize, reopened]
+    types: [ opened, synchronize, reopened ]
 jobs:
   build:
     
-    runs-on: ubuntu-latest  
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
         with:
@@ -17,14 +17,14 @@ jobs:
         with:
           java-version: 18
           distribution: 'temurin'
-      
+
       - name: Cache SonarCloud packages
         uses: actions/cache@v1
         with:
           path: ~/.sonar/cache
           key: ${{ runner.os }}-sonar
           restore-keys: ${{ runner.os }}-sonar
-          
+
       - name: Cache Maven packages
         uses: actions/cache@v1
         with:
