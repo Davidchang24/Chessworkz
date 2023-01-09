@@ -5,7 +5,7 @@ on:
     branches: ["main"]
 
 env:
-  IMAGE_NAME: Chessworkz
+  IMAGE_NAME: chessworkz
 
 jobs:
   build:
