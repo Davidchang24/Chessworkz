@@ -32,11 +32,7 @@ public class CourseController {
     {
         return courseService.updateCourse(course);
     }
-    @GetMapping(value = "/{id}")
-    public Course getCourseById(@PathVariable("id") long Id) {
-        return courseService.getCourseById(Id);
-    }
-
+    
     @DeleteMapping(value = "/delete/{id}")
     public void deleteCourseById(@PathVariable("id") long Id) {
         courseService.deleteCourseById(Id);

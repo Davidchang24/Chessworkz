@@ -26,10 +26,6 @@ public class CourseService {
         return courseRepository.save(course);
     }
 
-    public Course getCourseById(long Id) {
-        return courseRepository.getReferenceById(Id);
-    }
-
     public void deleteCourseById(long Id) {
         courseRepository.deleteById(Id);
     }
